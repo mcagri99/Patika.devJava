@@ -1,0 +1,27 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Matermatik notunuzu giriniz:");
+		int matematik = scan.nextInt();
+		
+		System.out.println("Turkce notunuzu giriniz:");
+		int turkce = scan.nextInt();
+		
+		System.out.println("Tarih notunuzu giriniz:");
+		int tarih = scan.nextInt();
+		
+		System.out.println("fizik notunuzu giriniz:");
+		int fizik = scan.nextInt();
+		
+		scan.close();
+		
+		double avarage = (fizik + matematik + tarih + turkce)/4;
+		
+		System.out.println("Ortalamaniz: " + avarage);
+		
+		boolean result2 = avarage>=60 ;
+		String gectiKaldi = result2 ? "Geçtiniz." : "Kaldiniz.";
+		System.out.println(gectiKaldi);
